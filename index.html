@@ -1,1 +1,11 @@
-inde
+The Remote Terminal application, hereby referred to as the software, implements the SSH protocols and is able to connect to remote servers. The only connections made by the software are those specifically requested by the user by providing either the IP address or the host name of the remote server and the TCP port to connect to.
+
+The following information will be revealed/sent to the remote server the user attempts to connect to:
+
+    all technical information regarding the network connection (source IP address and TCP port number, etc.)
+    information necessary for the SSH connection and authentication mechanism (the installed version of the software, the supported SSH protocol version, user name, password or private key authentication data)
+    information supporting the virtual terminal functionality of the software such as the size of the virtual terminal on the user's screen (both terminal columns/rows measured in characters and width/height measured in pixels), resizing events of the virtual terminal and the feature set supported by the virtual terminal
+    as soon as a connection to a remote server is established successfully, everything entered by the user through the virtual terminal window
+
+Additionally, the software locally stores connection details and private keys which are entered/imported into the application by the user.
+No information entered/imported by the user into the application is sent to the author of the software. 
